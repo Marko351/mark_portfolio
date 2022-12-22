@@ -7,12 +7,26 @@ module.exports = {
     extend: {
       colors: {
         primary: '#64ffda',
-        'primary-light': '#D8E9A8',
         background: '#191A19',
-        'background-light': '#2F3030',
       },
       fontFamily: {
         SpaceMono: ['Space Mono', ...defaultTheme.fontFamily.sans],
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': {
+            opacity: 0,
+          },
+          '100%': {
+            visibility: 'visible',
+            opacity: 1,
+          },
+        },
+      },
+      animation: {
+        'fadeIn-1': '1s fadeIn',
+        'fadeIn-1.5': '1.5s fadeIn',
+        'fadeIn-2': '2s fadeIn',
       },
     },
   },

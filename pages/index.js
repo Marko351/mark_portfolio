@@ -9,6 +9,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <h1 className="text-white">THIS IS A HEADER</h1>
       {/* Navbar */}
       {/* <Navbar /> */}
 

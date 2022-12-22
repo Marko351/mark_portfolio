@@ -16,3 +16,19 @@
   margin: 0px auto;
   background-color: #fff;
 }
+
+/* .hidden-h {
+  visibility: hidden;
+}
+
+.hidden-h.visible {
+  visibility: visible;
+}
+
+.hidden-h.delay-05s {
+  transition-delay: 0.5s;
+}
+
+.hidden-h.delay-1s {
+  transition-delay: 1s;
+} */
