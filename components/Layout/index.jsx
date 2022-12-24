@@ -29,10 +29,12 @@ const Layout = ({ children }) => {
         </div>
 
         {/* Main content */}
-        <main className={classNames(`flex-1 py-10 px-8 md:px-20 font-sans animate-fadeIn-1.5`, { 'blur-[2px]': openNav })}>{children}</main>
+        <main className={classNames(`py-10 flex-1 flex items-stretch px-8 md:px-20 font-sans animate-fadeIn-1.5`, { 'blur-[2px]': openNav })}>
+          {children}
+        </main>
 
         {/* Footer */}
-        <footer className="flex flex-col py-6 px-8 md:px-20 text-gray-300 text-center text-sm">
+        <footer className="flex flex-col py-6 px-8 md:px-20 text-gray-300 text-center text-sm z-10">
           <div className="flex justify-center md:hidden space-x-6 text-2xl">
             <SocialLinks />
           </div>

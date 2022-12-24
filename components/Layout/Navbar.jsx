@@ -18,7 +18,7 @@ export const Navbar = ({ openNav, setOpenNav }) => {
         <div id="menu-bar" className={classNames({ change: openNav })} onClick={() => toggleNav(!openNav)}>
           <div id="bar1" className={classNames('bar w-full')}></div>
           <div id="bar2" className={classNames('bar w-10/12', { 'w-full': openNav })}></div>
-          <div id="bar3" className={classNames('bar w-8/12', { 'w-full': openNav })}></div>
+          <div id="bar3" className={classNames('bar', { 'w-full': openNav, 'w-8/12': !openNav })}></div>
         </div>
       </div>
       <div className={classNames('md:hidden relative menu-bg', { 'change-bg': openNav })}>
