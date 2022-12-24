@@ -21,6 +21,34 @@
   background-color: #fff;
 }
 
+.vertical-letters {
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+
+.horizontal-line::after {
+  content: '';
+  display: inline-block;
+  width: 250px;
+  height: 1px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  background-color: #4a4f4a;
+}
+
+@media only screen and (max-width: 768px) {
+  .horizontal-line::after {
+    margin-bottom: 6px;
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .horizontal-line::after {
+    width: 180px;
+  }
+}
+
 #menu-bar {
   width: 30px;
   height: 30px;

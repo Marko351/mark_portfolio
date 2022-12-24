@@ -29,7 +29,11 @@ const Layout = ({ children }) => {
         </div>
 
         {/* Main content */}
-        <main className={classNames(`py-10 flex-1 flex items-stretch px-8 md:px-20 font-sans animate-fadeIn-1.5`, { 'blur-[2px]': openNav })}>
+        <main
+          className={classNames(`py-10 flex-1 flex items-stretch px-8 md:px-24 font-sans animate-fadeIn-1.5`, {
+            'blur-[2px]': openNav,
+          })}
+        >
           {children}
         </main>
 
@@ -42,11 +46,11 @@ const Layout = ({ children }) => {
         </footer>
 
         {/* Social Links */}
-        <div className={`hidden md:flex flex-col absolute bottom-2 left-20 text-2xl line animate-fadeIn-1`}>
+        <div className={`hidden md:flex flex-col absolute bottom-2 left-14 text-2xl line animate-fadeIn-1`}>
           <SocialLinks />
         </div>
-        <div className={`hidden md:block absolute bottom-2 right-0 text-2xl line animate-fadeIn-1`}>
-          <div className="text-gray-300 text-sm rotate-90 mb-28 cursor-pointer hover:text-primary">markodjuric351@gmail.com</div>
+        <div className={`hidden md:block absolute bottom-2 right-14 text-2xl line animate-fadeIn-1`}>
+          <div className="text-gray-300 text-sm vertical-letters mb-4 cursor-pointer hover:text-primary">markodjuric351@gmail.com</div>
         </div>
       </div>
     </>
