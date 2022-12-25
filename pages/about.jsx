@@ -4,7 +4,7 @@ import React from 'react';
 
 const About = (props) => {
   return (
-    <section className="bg-background lg:pb-28 mx-auto flex flex-col justify-center md:min-w-0 lg:min-w-[800px]">
+    <section className="bg-background mx-auto flex flex-col justify-center md:min-w-0 lg:min-w-[800px]">
       <h2 className="text-gray-200 text-xl md:text-3xl font-bold horizontal-line">
         <span className="text-primary text-md md:text-xl font-SpaceMono font-thin">02.</span> About Me
       </h2>
@@ -15,10 +15,13 @@ const About = (props) => {
             decided to try building musician website for my friend - turns out building website taught me a lot about HTML, CSS, JavaScript!
           </p>
           <p className="mt-4">
-            Fast-forward to today, and I have gained a lot of experience in various technologies and business branches. So far I've been involved in
-            creating <span className="text-primary">Roster</span> - hotel management service, <span className="text-primary">Legal</span> -
-            application for a layers, <span className="text-primary">CRM</span> - customer relationship management,{' '}
-            <span className="text-primary">Skylead</span> - Linkedin automation and <span className="text-primary">Accounting</span>.
+            Fast-forward to today, and I have gained a lot of experience in various technologies and business branches. So far, I have been involved
+            in creating <span className="text-primary">Roster</span>, a hotel management service that allows hotel staff to easily manage guest
+            reservations and room assignments; <span className="text-primary">Legal</span>, an application for lawyers that helps them track client
+            cases and document management; <span className="text-primary">CRM</span>, a customer relationship management system that helps businesses
+            manage and analyze customer interactions and data; <span className="text-primary">Skylead</span>, a LinkedIn automation tool that helps
+            users connect with potential clients and leads; and <span className="text-primary">Accounting</span>, a financial management application
+            that helps businesses track their expenses and income.
           </p>
           <p className="mt-4">Here are a few technologies I've been working with in my carrier:</p>
           <ul className="block md:grid grid-cols-2 gap-y-3 p-0 mt-4 overflow-hidden list-none">
@@ -66,7 +69,7 @@ const About = (props) => {
             </li>
           </ul>
         </div>
-        <div className="brightness-75 saturate-150 mt-14 max-w-xs md:mt-0">
+        <div className="brightness-75 saturate-150 mt-14 md:mt-0">
           <Image className="rounded-lg cursor-pointer mx-auto drop-shadow-2xl" src={'/images/me/me_1.jpeg'} alt="me" width={250} height={250} />
         </div>
       </div>

@@ -19,8 +19,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div className={`flex flex-col min-h-screen bg-background font-SpaceMono relative overflow-hidden`}>
-        <div className={`flex justify-between items-center h-14 py-10 px-8 md:px-16 animate-fadeIn-1`}>
+      <div className={`flex flex-col min-h-screen pt-20 bg-background font-SpaceMono relative overflow-hidden`}>
+        <div
+          className={`fixed top-0 z-10 flex h-14 md:h-auto bg-background justify-between items-center py-10 px-8 md:px-16 animate-fadeIn-1 w-full`}
+        >
           {/* Logo */}
           <Logo />
 
@@ -46,10 +48,10 @@ const Layout = ({ children }) => {
         </footer>
 
         {/* Social Links */}
-        <div className={`hidden md:flex flex-col absolute bottom-2 left-14 text-2xl line animate-fadeIn-1`}>
+        <div className={`hidden md:flex flex-col fixed bottom-2 left-14 text-2xl line animate-fadeIn-1`}>
           <SocialLinks />
         </div>
-        <div className={`hidden md:block absolute bottom-2 right-14 text-2xl line animate-fadeIn-1`}>
+        <div className={`hidden md:block fixed bottom-2 right-14 text-2xl line animate-fadeIn-1`}>
           <div className="text-gray-300 text-sm vertical-letters mb-4 cursor-pointer hover:text-primary">markodjuric351@gmail.com</div>
         </div>
       </div>
