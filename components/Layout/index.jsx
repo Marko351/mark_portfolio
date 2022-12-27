@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
     <>
       <div className={`flex flex-col min-h-screen pt-20 bg-background font-SpaceMono relative overflow-hidden`}>
         <div
-          className={`fixed top-0 z-10 flex h-14 md:h-auto bg-background justify-between items-center py-10 px-8 md:px-16 animate-fadeIn-1 w-full`}
+          className={`fixed opacity-90 shadow-md shadow-teal-900 top-0 z-10 flex h-14 md:h-10 bg-background justify-between items-center py-10 px-8 md:px-16 animate-fadeIn-1 w-full`}
         >
           {/* Logo */}
           <Logo />

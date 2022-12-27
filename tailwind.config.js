@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         primary: '#64ffda',
         background: '#191A19',
+        'background-light': '#1e231e',
       },
       fontFamily: {
         SpaceMono: ['Space Mono', ...defaultTheme.fontFamily.sans],

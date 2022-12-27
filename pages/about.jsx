@@ -24,7 +24,7 @@ const About = (props) => {
             that helps businesses track their expenses and income.
           </p>
           <p className="mt-4">Here are a few technologies I've been working with in my carrier:</p>
-          <ul className="block md:grid grid-cols-2 gap-y-3 p-0 mt-4 overflow-hidden list-none">
+          <ul className="block md:grid grid-cols-2 space-y-2 md:space-y-0 md:gap-y-3 p-0 mt-4 overflow-hidden list-none">
             <li className="flex items-center">
               <span className="text-primary flex items-center mr-2">
                 <CaretRightOutlined />
@@ -70,7 +70,13 @@ const About = (props) => {
           </ul>
         </div>
         <div className="brightness-75 saturate-150 mt-14 md:mt-0">
-          <Image className="rounded-lg cursor-pointer mx-auto drop-shadow-2xl" src={'/images/me/me_1.jpeg'} alt="me" width={250} height={250} />
+          <Image
+            className="shadow-lg rounded-lg mx-auto hover:scale-105 shadow-teal-900 transition-transform ease-out duration-200"
+            src={'/images/me/me_1.jpeg'}
+            alt="me"
+            width={250}
+            height={250}
+          />
         </div>
       </div>
     </section>
