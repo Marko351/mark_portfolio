@@ -52,7 +52,7 @@ const Layout = ({ children }) => {
           <SocialLinks />
         </div>
         <div className={`hidden md:block fixed bottom-2 right-14 text-2xl line animate-fadeIn-1`}>
-          <div className="text-gray-300 text-sm vertical-letters mb-4 cursor-pointer hover:text-primary">markodjuric351@gmail.com</div>
+          <div className="text-gray-300 text-sm vertical-letters mb-4 hover:text-primary">markodjuric351@gmail.com</div>
         </div>
       </div>
     </>

@@ -4,7 +4,7 @@
 
 @layer components {
   .social-icons {
-    @apply text-gray-300 cursor-pointer hover:text-primary hover:-translate-y-1 transition-transform duration-200 ease-out;
+    @apply text-gray-300 hover:text-primary hover:-translate-y-1 transition-transform duration-200 ease-out;
   }
 }
 
@@ -127,4 +127,23 @@
   width: 520px;
   height: 100vh;
   transform: translate(35%, -10%);
+}
+
+body {
+  cursor: none;
+}
+
+.cursor {
+  pointer-events: none;
+}
+
+.cursor__ball {
+  position: fixed;
+  top: 0;
+  left: 0;
+  mix-blend-mode: soft-light;
+  z-index: 1000;
+}
+.cursor circle {
+  fill: var(--primary);
 }

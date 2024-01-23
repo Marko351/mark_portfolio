@@ -10,21 +10,31 @@ export const NavLinks = ({ toggleNav }) => {
       <Link
         href="/"
         onClick={toggleNav}
-        className={router.pathname === '/' ? 'text-primary' : 'hover:-translate-y-1 transition-transform duration-200 ease-out'}
+        className={
+          router.pathname === '/' ? 'text-primary cursor-none' : 'hover:-translate-y-1 transition-transform duration-200 ease-out cursor-none'
+        }
       >
         <span className="text-primary">01.</span>Home
       </Link>
       <Link
         href="/about"
         onClick={toggleNav}
-        className={router.pathname.includes('about') ? 'text-primary' : 'hover:-translate-y-1 transition-transform duration-200 ease-out'}
+        className={
+          router.pathname.includes('about')
+            ? 'text-primary cursor-none'
+            : 'hover:-translate-y-1 transition-transform duration-200 ease-out cursor-none'
+        }
       >
         <span className="text-primary">02.</span>About Me
       </Link>
       <Link
         href="/experience"
         onClick={toggleNav}
-        className={router.pathname.includes('experience') ? 'text-primary' : 'hover:-translate-y-1 transition-transform duration-200 ease-out'}
+        className={
+          router.pathname.includes('experience')
+            ? 'text-primary cursor-none'
+            : 'hover:-translate-y-1 transition-transform duration-200 ease-out cursor-none'
+        }
       >
         <span className="text-primary">03.</span>
         <span>Experience</span>
@@ -32,7 +42,11 @@ export const NavLinks = ({ toggleNav }) => {
       <Link
         href="/contact"
         onClick={toggleNav}
-        className={router.pathname.includes('contact') ? 'text-primary' : 'hover:-translate-y-1  transition-transform duration-200 ease-out'}
+        className={
+          router.pathname.includes('contact')
+            ? 'text-primary cursor-none'
+            : 'hover:-translate-y-1  transition-transform duration-200 ease-out cursor-none'
+        }
       >
         <span className="text-primary">04.</span>Contact
       </Link>
